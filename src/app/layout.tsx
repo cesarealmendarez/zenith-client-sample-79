@@ -1,4 +1,7 @@
+import NavigationBar from "@/components/NavigationBar";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import SocialCTA from "@/components/SocialCTA";
 
 export default function RootLayout({
     children,
@@ -15,7 +18,10 @@ export default function RootLayout({
             </head>
 
             <body>
+                <NavigationBar />
                 {children}
+                <SocialCTA />
+                <Footer />
             </body>
         </html>
     );
